@@ -1,11 +1,16 @@
 body{
-    color: white;
+    color: rgb(0, 159, 252);
+    background-image: url(../img/marble-black-background.jpg), url(../img/marble-2398946_1920.jpg);
+    background-position: right, left;
+    
     /* trouvé font*/
 }
 
 .contenu{
     display: flex;
-    justify-content: center;
+    height: 100vh;
+    position: relative;
+    
 }
 
 h1.main-title{
@@ -19,18 +24,44 @@ img{
     padding: auto;
 }
 .content__middle{
+    order: 2;
+    z-index: 1;
+    /*top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);*/
     display: flex;
+    flex-direction: column;
+    color: darkred;
+
 }
 .content__left{
-    background-image: url(../img/marble-black-background.jpg);
+    order:1;
+    /* background-image: url(../img/marble-black-background.jpg); */
+    width: 50%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
 }
 .content__right{
-    background-image: url(../img/hd-wallpaper-2362266_1920.jpg);
+    order:3;
+    /* background-image: url(../img/marble-2398946_1920.jpg); */
+    width: 50%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+.caché{
+    position: absolute;
+    display: none;
 }
 .conteneur{
     border: .1rem solid fuchsia;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.39);
     padding: auto ;
+    width: 33%;
 }
 
 h2.titre{
