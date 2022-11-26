@@ -1,8 +1,5 @@
 body{
     color: rgb(0, 159, 252);
-    background-image: url(../img/marble-black-background.jpg), url(../img/marble-2398946_1920.jpg);
-    background-position: right, left;
-    
     /* trouvé font*/
 }
 
@@ -26,17 +23,18 @@ img{
 .content__middle{
     order: 2;
     z-index: 1;
-    /*top: 50%;
+    position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);*/
+    transform: translate(-50%,-50%);
     display: flex;
     flex-direction: column;
     color: darkred;
-
 }
+    
 .content__left{
     order:1;
-    /* background-image: url(../img/marble-black-background.jpg); */
+    background-image: url(../img/marble-black-background.jpg);
     width: 50%;
     position: static;
     display: flex;
@@ -45,8 +43,8 @@ img{
 
 }
 .content__right{
-    order:3;
-    /* background-image: url(../img/marble-2398946_1920.jpg); */
+    order:2;
+    background-image: url(../img/marble-2398946_1920.jpg);
     width: 50%;
     position: static;
     display: flex;
