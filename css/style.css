@@ -43,7 +43,6 @@ h1.main-title{
     align-items: flex-start;
 } 
 
-
 h2.titre{
     font-style: italic;
     font-size: 1rem;
@@ -57,20 +56,55 @@ section{
 p.description{
     font-size: .2rem;
 }
+.misenpage{
+    flex-basis: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+/*** Contenu Central et caché***/
 
-/** Contenu Central et caché**/
-
+/** Middle**/
 .content__middle{
-    order: 2;
-    z-index: 1;
+    z-index: 1; 
     position: absolute;
+    width: 100vh;
+    height: 100vh;
+    box-sizing: border-box;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+
     display: flex;
     flex-direction: column;
     color: darkred;
+    gap: 5rem;
 }
+.art{
+    flex-basis: 40%;
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+}
+.présentation{
+    flex-basis: 10%;
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+}
+.skills{
+    flex-basis: 40%;
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+}
+/** Caché**/
+
 .caché{
     position: absolute;
     display: none;
@@ -97,14 +131,6 @@ p.description{
 
 }
 
-.misenpage{
-    flex-basis: 90%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
 .spectacle{
     flex-basis: 40%;
     align-self: center;
