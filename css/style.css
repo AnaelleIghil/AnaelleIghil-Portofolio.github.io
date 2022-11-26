@@ -1,8 +1,15 @@
+/**Regles généralisés*/
 body{
     color: rgb(0, 159, 252);
     /* trouvé font*/
 }
-
+/*
+img{
+    display: block;
+    margin: auto;
+    padding: auto;
+}
+*/
 .contenu{
     display: flex;
     height: 100vh;
@@ -10,18 +17,50 @@ body{
     
 }
 
+.conteneur{
+    border: .1rem solid fuchsia;
+    background-color: rgba(255, 255, 255, 0.39);
+    padding: auto ;
+    width: 33%;
+}
+header{
+    flex-basis: 10%;
+}    
+#past{
+    align-items: flex-start;
+}
+#present{
+    align-items: flex-end;
+    text-align: right;
+}
 h1.main-title{
     font-weight: bold;
     font-size: 2rem;
-    text-align: center;
+    text-align: left;
+    
+    flex: 1 auto;
+    flex-basis: 10%;
+    align-items: flex-start;
+} 
+
+
+h2.titre{
+    font-style: italic;
+    font-size: 1rem;
 }
-img{
-    display: block;
-    margin: auto;
-    padding: auto;
+h3.subtitle{
+    font-size: .5rem;
 }
+section{
+  flex: 2 auto;
+}
+p.description{
+    font-size: .2rem;
+}
+
+/** Contenu Central et caché**/
+
 .content__middle{
-    visibility: hidden;
     order: 2;
     z-index: 1;
     position: absolute;
@@ -32,44 +71,64 @@ img{
     flex-direction: column;
     color: darkred;
 }
-    
-.content__left{
-    order:1;
-    background-image: url(../img/marble-black-background.jpg);
-    width: 50%;
-    position: static;
-    display: flex;
-    flex-direction: column;
-    color: white;
-
-}
-.content__right{
-    order:2;
-    background-image: url(../img/marble-2398946_1920.jpg);
-    width: 50%;
-    position: static;
-    display: flex;
-    flex-direction: column;
-    color: black;
-}
 .caché{
     position: absolute;
     display: none;
 }
-.conteneur{
-    border: .1rem solid fuchsia;
-    background-color: rgba(255, 255, 255, 0.39);
-    padding: auto ;
-    width: 33%;
+
+/** Contenu Gauche**/
+.content__left{
+    order:1;
+    background-image: url(../img/marble-black-background.jpg);
+    width: 45%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: white;
+}
+.cinema{
+    flex-basis: 40%;
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+
 }
 
-h2.titre{
-    font-style: italic;
-    font-size: 1rem;
+.misenpage{
+    flex-basis: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
-h3.subtitle{
-    font-size: .5rem;
+.spectacle{
+    flex-basis: 40%;
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    
 }
-p.description{
-    font-size: .2rem;
+
+/**Contenu Droit*/
+.content__right{
+    order:2;
+    background-image: url(../img/marble-2398946_1920.jpg);
+    width: 55%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: black;
+}
+.web{
+    flex-basis: 40%;
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
 }
