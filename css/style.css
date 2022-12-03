@@ -2,14 +2,11 @@
 
 body{
     color: rgb(0, 159, 252);
+   
     font:'Gelasio', serif ;
     background-image: url(../img/spritesheet.png);
-    background-position: -1420px;
-}
-
-main{
-    display: flex;
-    height: 100vh;
+    background-position: center;
+    /* set more acurate background value. */
 }
 
 .conteneur{
@@ -70,7 +67,7 @@ p.description{
     box-sizing: border-box;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%); 
 
     display: flex;
     flex-direction: column;
@@ -107,9 +104,16 @@ p.description{
 
 /** Contenu Gauche**/
 .content__left{
+    z-index: 1; 
+    position: absolute;
+    width: 100vh;
+    height: 100vh;
+    box-sizing: border-box;
+  
+    right: 50%;
     order:1;
-    width: 45%;
-    position: static;
+    /* width: 45%; 
+    position: static;*/ 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -137,8 +141,15 @@ p.description{
 /**Contenu Droit*/
 .content__right{
     order:2;
-    width: 55%;
-    position: static;
+    z-index: 1; 
+    position: absolute;
+    width: 100vh;
+    height: 100vh;
+    box-sizing: border-box;
+
+    left: 50%;
+   /*  width: 55%; 
+    position: static;*/
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
