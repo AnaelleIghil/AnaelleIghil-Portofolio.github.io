@@ -4,12 +4,15 @@
 
 *Menu supérieur*
 Sur un fond noir, typo blanche, un premier lien menu navigation qui permettra un accés rapide aux diverses catégories ainsi que des buttons liens vers les réseaux xsociaux, et un lien vers un formulaire de contact blank.
+ ! Menu dynamique qui n'apparait qu'au survol. !
 
 *Contenu principal*
 Partagé en deux catégorie, définie chacune par un fond marble, le passé en noir, le présent en blanc. Contenu divisé en 5 partie + 1 central. Chaque partie représente une catégorie du portofolio, le menu central représentera une image qui changera en fonction des différents chemin emprunté. Sur la gauche dans le passé les catégorie cinéma et spectacle, sur la droite, le web et éventuellement le tatouage, au milieu, encadrant l'image centrale, l'art et les skills.
+! partie dynamique. En fonction des click, agrandir le bacjground noir/blanc/central. !
 
 *Catégorie*
 Chaque bulle de catégorie affichera un menu déroulant des diverses activités. Chaque activités activera un menu déroulant sur le descriptif et/ou un liens vers un autre site. Chaque clic sera traqué pour analysé quelle image central doit être affiché.
+! déroulé au click !
 
 +Spectacle
 +Cinéma
@@ -95,3 +98,4 @@ Je ne peux pas établir le lien visuel entre les différentes catégories et sou
 je ne sais pas non plus si l'option form serait le meilleur moyen de receuillir les données de clic pour "décideré quel images afficher.
 Une récupération de ces données d'utilisation sera faites, afin de pouvoir anaylser quels sont les profils qui viennt regarder le miens.
 La récupération des données permettrait aussi de pré-remplir le formulaire de contact.
+Update du 3/12/22 : tentative d'addition du js pour dynamiser divers comportement

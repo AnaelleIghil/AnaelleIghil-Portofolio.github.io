@@ -1,21 +1,16 @@
 /**Regles généralisés*/
-/* flex les trois div et sub flex les subdiv*/
+
 body{
     color: rgb(0, 159, 252);
-    /* trouvé font*/
+    font:'Gelasio', serif ;
+    background-image: url(../img/spritesheet.png);
+    background-position: -1420px;
 }
-/*
-img{
-    display: block;
-    margin: auto;
-    padding: auto;
-}
-*/
-.contenu{
+
+
+main{
     display: flex;
     height: 100vh;
-    position: relative;
-    
 }
 
 .conteneur{
@@ -114,7 +109,6 @@ p.description{
 /** Contenu Gauche**/
 .content__left{
     order:1;
-    background-image: url(../img/marble-black-background.jpg);
     width: 45%;
     position: static;
     display: flex;
@@ -144,7 +138,6 @@ p.description{
 /**Contenu Droit*/
 .content__right{
     order:2;
-    background-image: url(../img/marble-2398946_1920.jpg);
     width: 55%;
     position: static;
     display: flex;
