@@ -6,6 +6,8 @@ body{
     font:'Gelasio', serif ;
     background-image: url(../img/spritesheet.png);
     background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
     /* set more acurate background value. */
 }
 
@@ -43,6 +45,7 @@ h3.subtitle{
     font-size: .5rem;
 }
 section{
+    display:none;
   flex: 2 auto;
 }
 p.description{
@@ -60,7 +63,7 @@ p.description{
 
 /** Middle**/
 .content__middle{
-    z-index: 1; 
+    z-index: 2; 
     position: absolute;
     width: 100vh;
     height: 100vh;
@@ -111,7 +114,7 @@ p.description{
     box-sizing: border-box;
   
     right: 50%;
-    order:1;
+    order: 2;
     /* width: 45%; 
     position: static;*/ 
     display: flex;
@@ -140,7 +143,7 @@ p.description{
 
 /**Contenu Droit*/
 .content__right{
-    order:2;
+    order:3;
     z-index: 1; 
     position: absolute;
     width: 100vh;
