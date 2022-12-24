@@ -9,6 +9,9 @@ h1{
     font-size: 5rem;
     font-weight: bold;
 }
+.presentation{
+    display: hidden;
+}
 /*
 .contenu{
     display: flex;
