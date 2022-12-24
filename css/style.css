@@ -9,8 +9,8 @@ h1{
     font-size: 5rem;
     font-weight: bold;
 }
-.presentation{
-    display: hidden;
+.hide{
+    display: none;
 }
 /*
 .contenu{
