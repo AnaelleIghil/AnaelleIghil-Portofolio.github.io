@@ -1,6 +1,7 @@
 body {
   color: red;
   background-image: url(/img/spritesheet.png);
+  background-position: 20px 0px;
   text-align: center;
 }
 .hide {
@@ -28,10 +29,6 @@ h1{
 .subtitle{
   color: antiquewhite;
   font-style: italic;
-}
-h3 {
-  font-style: italic;
-  font-size: 1rem;
 }
 
 /*
