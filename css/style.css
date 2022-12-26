@@ -3,11 +3,38 @@ body {
   background-image: url(/img/spritesheet.png);
   text-align: center;
 }
-
+.hide {
+  display: none;
+}
 .header {
   position: fixed;
   top:0;
 }
+.container {
+  display: flex;
+  border: 1px solid red;
+  margin: auto;
+}
+.principale{
+  color: white;
+}
+.pp{
+  width: 250px;
+}
+h1{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.subtitle{
+  color: antiquewhite;
+  font-style: italic;
+}
+h3 {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+/*
 .octo{
   width: 100px;
   height: 100px;
@@ -36,14 +63,7 @@ body {
         width: 42px;
     height: 0;
 }
-.hide {
-  color: darkred;
-}
+*/
 
-.container {
-  display: flex;
-}
-h3 {
-  font-style: italic;
-  font-size: 1rem;
-}
+
+
