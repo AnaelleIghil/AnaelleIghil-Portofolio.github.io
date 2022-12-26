@@ -1,6 +1,6 @@
 body {
   color: black;
-  background-image: url(/img/lilac-angled-front-2-1024x768.jpg);
+  background-image: url(../img/lilac-angled-front-2-1024x768.jpg);
   /*background-image: url(/img/spritesheet.png);
   background-position: 20px 0px;*/
   text-align: center;
@@ -19,6 +19,7 @@ body {
 }
 .principale{
   color: white;
+  order: 1;
 }
 .pp{
   width: 250px;
@@ -31,8 +32,15 @@ h1{
   color: antiquewhite;
   font-style: italic;
 }
-
-
+.past{
+  order:3;
+}
+.current{
+  order: 2;
+}
+.subclass{
+  display: none;
+}
 
 
 
