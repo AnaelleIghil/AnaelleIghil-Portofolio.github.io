@@ -1,35 +1,40 @@
 body {
   color: red;
-  background-image: url(../img/marble-black-background.jpg),
-    url(../img/marble-2398946_1920.jpg);
-  background-position: right, left;
+  background-image: url(/img/spritesheet.png);
   text-align: center;
 }
 
 .header {
   position: fixed;
+  top:0;
 }
 .octo{
-  height: 1000px;
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
 }
-.octoOut{
-  position: fixed;
-  top: 100px;
-  left: 45%;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  z-index: 10;
+.octo:before{
+  content: "";
+    position: absolute;
+    top: 0;
+    left: 0;    
+    border-bottom: 29px solid red;
+    border-left: 29px solid #eee;
+    border-right: 29px solid #eee;
+        width: 42px;
+    height: 0;
 }
-.octoInn{
-  position: absolute;
-  top: 0px;
-  width: 200px;
-  height: 200px;
-  background: rgba(255,255,255,.25);
-  border-width: 2px;
-  border-style: solid;
-  transform: rotate(45deg);
+.octo:after{
+  content: "";
+    position: absolute;
+    top: 0;
+    left: 0;    
+    border-bottom: 29px solid red;
+    border-left: 29px solid #eee;
+    border-right: 29px solid #eee;
+        width: 42px;
+    height: 0;
 }
 .hide {
   color: darkred;
