@@ -1,32 +1,25 @@
-body{
-    color: red;
-    background-image: url(../img/marble-black-background.jpg), url(../img/marble-2398946_1920.jpg);
-    background-position: right, left;
-    text-align: center;  
-    /* trouvé font*/
-}
-h1{
-    font-size: 5rem;
-    font-weight: bold;
-}
-.hide{
-    color: darkred;
+body {
+  color: red;
+  background-image: url(../img/marble-black-background.jpg),
+    url(../img/marble-2398946_1920.jpg);
+  background-position: right, left;
+  text-align: center;
 }
 
-.container{
-    display: flex;
-    height: 100vh;
-    position: relative;
-    
+.header {
+  position: fixed;
 }
 
-h1{
-    font-weight: bold;
-    font-size: 2rem;
-    text-align: center;
+.hide {
+  color: darkred;
 }
 
-h3{
-    font-style: italic;
-    font-size: 1rem;
+.container {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+h3 {
+  font-style: italic;
+  font-size: 1rem;
 }
