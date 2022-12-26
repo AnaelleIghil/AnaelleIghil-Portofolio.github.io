@@ -1,6 +1,6 @@
 const list = document.getElementsByTagName("ul");
 for(const i=0; i<list.length; i++){
-    list[i].addEventListener('click', liClick);
+    list[i].addEventListener('click', liClick());
 }
 function liClick(){
     const listItem= document.getElementsByTagName("li");
@@ -8,3 +8,5 @@ function liClick(){
         this.style.display = 'block';
     }
 }
+
+/* develloppe ça en dehors de ce code, ça va te rendre folle.*/
