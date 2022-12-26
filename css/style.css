@@ -1,7 +1,8 @@
 body {
-  color: red;
-  background-image: url(/img/spritesheet.png);
-  background-position: 20px 0px;
+  color: black;
+  background-image: url(/img/lilac-angled-front-2-1024x768.jpg);
+  /*background-image: url(/img/spritesheet.png);
+  background-position: 20px 0px;*/
   text-align: center;
 }
 .hide {
