@@ -1,5 +1,5 @@
 body{
-  background-image: url("./img/marble-black-background.jpg");
+  background-image: url("/img/marble-black-background.jpg");
   color: antiquewhite;
   scroll-behavior: smooth;
 }
