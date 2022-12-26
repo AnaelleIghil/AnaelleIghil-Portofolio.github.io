@@ -32,36 +32,7 @@ h1{
   font-style: italic;
 }
 
-/*
-.octo{
-  width: 100px;
-  height: 100px;
-  background: red;
-  position: relative;
-}
-.octo:before{
-  content: "";
-    position: absolute;
-    top: 0;
-    left: 0;    
-    border-bottom: 29px solid red;
-    border-left: 29px solid #eee;
-    border-right: 29px solid #eee;
-        width: 42px;
-    height: 0;
-}
-.octo:after{
-  content: "";
-    position: absolute;
-    top: 0;
-    left: 0;    
-    border-bottom: 29px solid red;
-    border-left: 29px solid #eee;
-    border-right: 29px solid #eee;
-        width: 42px;
-    height: 0;
-}
-*/
+
 
 
 
