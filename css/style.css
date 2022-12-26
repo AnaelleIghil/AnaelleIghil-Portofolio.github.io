@@ -9,15 +9,34 @@ body {
 .header {
   position: fixed;
 }
-
+.octo{
+  height: 1000px;
+}
+.octoOut{
+  position: fixed;
+  top: 100px;
+  left: 45%;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  z-index: 10;
+}
+.octoInn{
+  position: absolute;
+  top: 0px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255,255,255,.25);
+  border-width: 2px;
+  border-style: solid;
+  transform: rotate(45deg);
+}
 .hide {
   color: darkred;
 }
 
 .container {
   display: flex;
-  height: 100vh;
-  position: relative;
 }
 h3 {
   font-style: italic;
