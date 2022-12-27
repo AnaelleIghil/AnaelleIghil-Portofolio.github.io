@@ -50,7 +50,7 @@ section{
 
 }
 section.main img{
-  border: 10px solid rbg(42,42,42);
+  border: 5px solid rgb(42,42,42);
   border-radius: 100%;
   cursor:pointer;
   height: 200px;
@@ -63,6 +63,8 @@ section.main span{
   color: grey;
   font-size: 70px;
   font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 section.main p {
   animation: typewriter 4s steps(44) 1s 1 normal both, blinktextCursor 530ms steps(44) infinite normal;
@@ -100,45 +102,39 @@ section.main ul li a:hover {
   border: 10px solid darkgray;
   border-radius: 100%;
   cursor:pointer;
-  height: 150px;
+  height: 200px;
   object-fit: cover;
   margin-bottom: 10px;
-  width:150px;
+  width:200px;
 }
 /** galery **/
 
-#bio {
+.bio {
   color: white;
   font-weight: lighter;
   letter-spacing: 6px;
 }
 
-#bio > div > span {
+.bio > div > span {
   text-transform: uppercase;
 }
 
-#bio p {
+.bio p {
   font-size: 1.7em;
   line-height: 1.8;
   margin-top: 10px;
+  padding: 0 5rem;
 }
 h1 {
   color: white;
   font-weight: bold;
-  letter-spacing: 30px;
-  margin-bottom: 0px;
+  letter-spacing: 4rem;
+  margin-bottom: 20px;
   text-transform: uppercase;
+  font-size: 5rem;
 }
 
-#header a, span.link {
-  color: #fff;
-  cursor: pointer;
-  font-size: 1.23rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-footer#connect {
+.connect {
   background-color: whitesmoke;
   bottom: 0;
   color: darkred;
@@ -147,9 +143,15 @@ footer#connect {
   width: 100%;
   z-index: 1;
 }
-
-#footer-links {
-  margin: auto;
+.textStyling__dots{
+  animation: typewriter 4s steps(44) 1s 1 normal both, blinktextCursor 530ms steps(44) infinite ;
+  color: antiquewhite;
+  border-right: 2px solid black;
+  font-size: 40px;
+  overflow: hidden;
+  position: relative;
+  top:50%;
+  white-space: nowrap;
 }
 /** coded**/
 .textStyling{
