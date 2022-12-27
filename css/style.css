@@ -1,5 +1,5 @@
 body{
-  background-image: url("img/marble-black-background.jpg");
+  background-image: url("../img/marble-black-background.jpg");
   background-color: #000000;
   color: antiquewhite;
   scroll-behavior: smooth;
@@ -27,7 +27,7 @@ header nav .header_links ul li a:hover{
   color: #f0f;
 }
 header nav .header_logo img{
-  border: 5px solid darkslategrey;
+  border: 5px solid darkblue;
   border-radius: 100%;
   cursor: pointer;
   height: 50px;
@@ -36,9 +36,20 @@ header nav .header_logo img{
 }
 section{
   display:flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.section{
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 section.main img{
-  border: 10px solid purple;
+  border: 10px solid darkgray;
   border-radius: 100%;
   cursor:pointer;
   height: 150px;
@@ -49,14 +60,14 @@ section.main img{
 
 section.main span{
   color: grey;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bold;
 }
 section.main p {
   animation: typewriter 4s steps(44) 1s 1 normal both, blinktextCursor 530ms steps(44) infinite normal;
   color: antiquewhite;
   border-right: 2px solid black;
-  font-size: 13px;
+  font-size: 30px;
   overflow: hidden;
   position: relative;
   top:50%;
@@ -84,7 +95,15 @@ section.main ul li a:hover {
   color: #fff;
   transition: 0.2s all;
 }
-
+.pp{
+  border: 10px solid darkgray;
+  border-radius: 100%;
+  cursor:pointer;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  width:150px;
+}
 /** about **/
 
 #bio {
@@ -105,7 +124,7 @@ section.main ul li a:hover {
 h1 {
   color: white;
   font-weight: bold;
-  letter-spacing: 13px;
+  letter-spacing: 30px;
   margin-bottom: 0px;
   text-transform: uppercase;
 }
@@ -119,9 +138,9 @@ h1 {
 }
 
 footer#connect {
-  background-color: black;
+  background-color: whitesmoke;
   bottom: 0;
-  color: #ffffff;
+  color: darkred;
   position: fixed;
   padding: 0.5rem;
   width: 100%;
@@ -144,8 +163,8 @@ footer#connect {
 	width: 100%;
 }
 .wrapperLast{
-  
-	background-image: url(/img/hd-wallpaper-2362266_1920.jpg);
+
+	background-image: url("../img/hd-wallpaper-2362266_1920.jpg");
 	border-radius: 14px;
 	color: rgb(255, 255, 255);
 	height: auto;
@@ -198,7 +217,7 @@ footer#connect {
 	white-space: nowrap;
 }
 .wrapa{
-	background-color: #000000;
+	background-color: antiquewhite;
 	inset: 0px;
 	height: 100%;
   margin: 0px auto;
