@@ -99,7 +99,7 @@ section.main ul li a:hover {
   transition: 0.2s all;
 }
 .pp{
-  border: 10px solid darkgray;
+  border: 10px solid rgb(42,42,42);
   border-radius: 100%;
   cursor:pointer;
   height: 200px;
@@ -135,7 +135,7 @@ h1 {
 }
 
 .connect {
-  background-color: whitesmoke;
+  background-color: rgba(42,42,42, 0.6);
   bottom: 0;
   color: darkred;
   position: fixed;
