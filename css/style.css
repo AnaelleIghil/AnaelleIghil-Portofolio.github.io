@@ -34,7 +34,9 @@ header nav .header_logo img{
   object-fit: cover;
   width: 50px;
 }
-
+section{
+  display:flex;
+}
 section.main img{
   border: 10px solid purple;
   border-radius: 100%;
