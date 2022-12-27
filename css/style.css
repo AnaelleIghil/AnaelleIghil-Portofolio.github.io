@@ -105,7 +105,7 @@ section.main ul li a:hover {
   margin-bottom: 10px;
   width:150px;
 }
-/** about **/
+/** galery **/
 
 #bio {
   color: white;
@@ -152,7 +152,16 @@ footer#connect {
   margin: auto;
 }
 /** coded**/
-
+.textStyling{
+  animation: typewriter 4s steps(44) 1s 1 normal both, blinktextCursor 530ms steps(44) infinite normal;
+  color: antiquewhite;
+  border-right: 2px solid black;
+  font-size: 40px;
+  overflow: hidden;
+  position: relative;
+  top:50%;
+  white-space: nowrap;
+}
 .a{
   font-size: 14px;
   font-weight: 500;
@@ -163,21 +172,33 @@ footer#connect {
 	line-height: 1.5;
 	width: 100%;
 }
-.wrapperLast{
+.titre{
+  align-items: center;
+  color: #ffffff;
+  display: grid;
+  font-size: 30px;
+  font-weight: bold;
+  grid-column-start: 2;
+  grid-template-columns: 1fr auto 1fr;
+  line-height: 1.5;
+  margin-left: 12px;
+  margin-right: 12px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-align: center;
+  white-space: nowrap;
+}
+.picture{
+  border-radius: 100%;
+	display: block;
+	height: 300px;
+	object-fit: contain;
+	object-position: initial;
+	width: 300px;
+}
 
-	background-image: url("../img/hd-wallpaper-2362266_1920.jpg");
-	border-radius: 14px;
-	color: rgb(255, 255, 255);
-	height: auto;
-	margin-bottom: 16px;
-	overflow: hidden;
-  position: relative;
-	transition: transform 0.15s cubic-bezier(0, 0.2, 0.5, 3) 0s;
-  z-index: 0;
-}
-.wrapper{
-  position: relative;
-}
+
 .wrap{
 	align-items: center;
   display: flex;
@@ -190,7 +211,7 @@ footer#connect {
 	width: 100%;
   -webkit-box-align: center;
 	-webkit-box-pack: justify;
-  background-color: rgba(151, 153, 153, 60);
+  background-color: rgba(151, 153, 153, 0.42);
   margin: 0px auto;
 	max-width: 680px;
 	padding-bottom: 80px;
@@ -198,30 +219,19 @@ footer#connect {
 	width: 100%;
 	z-index: -1;
 }
-.picture{
-  border-radius: 100%;
-	display: block;
-	height: 300px;
-	object-fit: contain;
-	object-position: initial;
-	width: 300px;
+.wrapping{
+  display: flex;
 }
-.titre{
-	align-items: center;
-	color: #ffffff;
-  display: grid;
-	font-size: 30px;
-	font-weight: bold;
-  grid-column-start: 2;
-	grid-template-columns: 1fr auto 1fr;
-	line-height: 1.5;
-  margin-left: 12px;
-	margin-right: 12px;
-	max-width: 100%;
+.wrapperLast{
+	background-image: url("../img/hd-wallpaper-2362266_1920.jpg");
+	border-radius: 14px;
+	color: rgb(255, 255, 255);
+	height: auto;
+	margin-bottom: 16px;
 	overflow: hidden;
-	text-overflow: ellipsis;
-	-webkit-box-align: center;
-	white-space: nowrap;
+  position: relative;
+	transition: transform 0.15s cubic-bezier(0, 0.2, 0.5, 3) 0s;
+  z-index: 0;
 }
 
 /** else **/
