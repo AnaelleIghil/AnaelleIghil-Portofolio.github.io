@@ -18,8 +18,8 @@ header nav .header_links ul{
   flex-direction: row;
 }
 header nav .header_links ul li a {
-  color: red;
-  font-size: 15px;
+  color: rbg(46, 3, 8);
+  font-size: 30px;
   padding: 5px 12px;
   transition: 0.3s all;
 }
@@ -27,7 +27,7 @@ header nav .header_links ul li a:hover{
   color: #f0f;
 }
 header nav .header_logo img{
-  border: 5px solid darkblue;
+  border: 5px solid rgb(14, 15, 82);
   border-radius: 100%;
   cursor: pointer;
   height: 50px;
@@ -47,27 +47,28 @@ section{
   align-content: center;
   justify-content: center;
   align-items: center;
+
 }
 section.main img{
-  border: 10px solid darkgray;
+  border: 10px solid rbg(42,42,42);
   border-radius: 100%;
   cursor:pointer;
-  height: 150px;
+  height: 200px;
   object-fit: cover;
   margin-bottom: 10px;
-  width:150px;
+  width:200px;
 }
 
 section.main span{
   color: grey;
-  font-size: 50px;
+  font-size: 70px;
   font-weight: bold;
 }
 section.main p {
   animation: typewriter 4s steps(44) 1s 1 normal both, blinktextCursor 530ms steps(44) infinite normal;
   color: antiquewhite;
   border-right: 2px solid black;
-  font-size: 30px;
+  font-size: 40px;
   overflow: hidden;
   position: relative;
   top:50%;
@@ -84,7 +85,7 @@ section.main ul {
 section.main ul li a {
   color: #a6a8b8;
   display: flex;
-  font-size: 25px;
+  font-size: 30px;
   margin: 20px 5px;
   padding: 5px;
   text-decoration: none;
@@ -186,25 +187,31 @@ footer#connect {
 	height: 100%;
 	margin-top: 12px;
 	margin-bottom: 32px;
-	padding: 24px 12px;
 	width: 100%;
   -webkit-box-align: center;
 	-webkit-box-pack: justify;
+  background-color: rgba(151, 153, 153, 60);
+  margin: 0px auto;
+	max-width: 680px;
+	padding-bottom: 80px;
+  position: fixed;
+	width: 100%;
+	z-index: -1;
 }
 .picture{
-  border-radius: 50%;
+  border-radius: 100%;
 	display: block;
-	height: 96px;
+	height: 300px;
 	object-fit: contain;
 	object-position: initial;
-	width: 96px;
+	width: 300px;
 }
 .titre{
 	align-items: center;
 	color: #ffffff;
   display: grid;
-	font-size: 16px;
-	font-weight: 500;
+	font-size: 30px;
+	font-weight: bold;
   grid-column-start: 2;
 	grid-template-columns: 1fr auto 1fr;
 	line-height: 1.5;
@@ -216,20 +223,7 @@ footer#connect {
 	-webkit-box-align: center;
 	white-space: nowrap;
 }
-.wrapa{
-	background-color: antiquewhite;
-	inset: 0px;
-	height: 100%;
-  margin: 0px auto;
-	max-width: 680px;
-	padding-bottom: 80px;
-  position: fixed;
-	width: 100%;
-	z-index: -1;
-}
-.wrapb{
-  display:flex
-}
+
 /** else **/
 @keyframes typewriter {
   from {
