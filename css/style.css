@@ -170,7 +170,7 @@ h1 {
   position: relative;
   line-height: 1.5;
   color: antiquewhite;
-  text-shadow: #000000;
+  text-shadow: #423a19 1px 0 10px;
 	
 }
 .titre{
@@ -196,7 +196,8 @@ h1 {
 	flex-direction: column;
 	justify-content: space-between;
   background-color: rgba(151, 153, 153, 0.42);
-  margin: 5rem;
+  margin:2rem  20rem;
+  padding: 2rem;
 }
 .wrapping{
   display: flex;
